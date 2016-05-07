@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Building my first todolist</title>
+</head>
+<style>
+    ul {
+        list-style: none;
+        width: 40%;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        border: 4px solid #333;
+        background: #eeeeee;
+    }
+</style>
+<body>
+    <input type="text" id="input"/>
+    <button id="btn" onclick="addToList()">Add todo</button>
+<hr/>
+    <ul id="todo"></ul>
+    <ul id="done"></ul>
+
+<script>
+    var Lists={
+        todo:document.getElementById('todo'),
+        done:document.getElementById('done')
+    };
+    var inputText=document.getElementById('input');
+    var btn=document.getElementById("btn");
+    function addToList(listname,inputText){
+        console.log("input inserted is:" + inputText  );
+    }
+</script>
+</body>
+</html>
