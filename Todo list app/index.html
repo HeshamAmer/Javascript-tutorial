@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 
     <title>Building my first todolist</title>
+    <script src="js/src.js"></script>
 </head>
 <style>
     ul {
@@ -12,27 +13,19 @@
         margin: 10px;
         padding: 10px;
         float: left;
-        border: 4px solid #333;
+        border: 1px solid #333;
         background: #eeeeee;
     }
 </style>
 <body>
     <input type="text" id="input"/>
-    <button id="btn" onclick="addToList()">Add todo</button>
+    <button id="btn" onclick="addToList('todo')">Add todo</button>
 <hr/>
     <ul id="todo"></ul>
     <ul id="done"></ul>
 
 <script>
-    var Lists={
-        todo:document.getElementById('todo'),
-        done:document.getElementById('done')
-    };
-    var inputText=document.getElementById('input');
-    var btn=document.getElementById("btn");
-    function addToList(listname,inputText){
-        console.log("input inserted is:" + inputText  );
-    }
+
 </script>
 </body>
 </html>
